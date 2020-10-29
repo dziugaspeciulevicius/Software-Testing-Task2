@@ -10,6 +10,16 @@ export function calculateWinner3x3(squares) {
     [2, 4, 6],
   ];
 
+  /* 
+  --- First, calculateWinner() function, declares a multidimensional array ‘lines’, 
+  that holds all the winning combinations.
+  --- Second, a ‘for’ loop iterate through all the combinations, and adds the board’s 
+  squares indexes in constants ‘a’, ‘b’ and ‘c’.
+  --- Finally, and ‘if’ conditional statement will compare the current combination of 
+  the iteration with the board’s clicked squares combinations, and if there is a match, 
+  it returns the current combination, otherwise it returns null. 
+  */
+
   // we loop through the array and destructure value a, b, c
 
   for (let i = 0; i < lines.length; i++) {
